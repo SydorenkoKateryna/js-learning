@@ -3,7 +3,7 @@
 // Якщо у змінній stars щось окрім чисел 1-5, вивести рядок
 // "Такої кількості зірок не має"
 
-const stars = 12;
+const stars = 3;
 let price;
 
 // if (stars === 1) {
@@ -20,28 +20,47 @@ let price;
 //   console.log('Такої кількості зірок не має');
 // }
 
+// switch (stars) {
+//   case 1:
+//     price = 20;
+//     break;
+//   case 2:
+//     price = 30;
+//     break;
+//   case 3:
+//     price = 50;
+//     break;
+//   case 4:
+//     price = 70;
+//     break;
+//   case 5:
+//     price = 120;
+//     break;
+
+//     default:
+//     console.log('Такої кількості зірок не має');
+// }
+
+// console.log(price);
+
+// Написати скрипт вибору вартості отеля по кількості зірок.
+// 1,2 - 20$, 3,4 -30$, 5 -120$
+
 switch (stars) {
   case 1:
+  case 2:
     price = 20;
     break;
-  case 2:
-    price = 30;
-    break;
   case 3:
-    price = 50;
-    break;
   case 4:
-    price = 70;
+    price = 30;
     break;
   case 5:
     price = 120;
     break;
 
-    default:
+  default:
     console.log('Такої кількості зірок не має');
 }
 
 console.log(price);
-
-// Написати скрипт вибору вартості отеля по кількості зірок.
-// 1,2 - 20$, 3,4 -30$, 5 -120$
